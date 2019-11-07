@@ -60,7 +60,7 @@ tf.app.flags.DEFINE_integer(
     'save_summaries_secs', 600,
     'The frequency with which summaries are saved, in seconds.')
 tf.app.flags.DEFINE_integer(
-    'save_interval_secs', 600,
+    'save_interval_secs', 3600,
     'The frequency with which the model is saved, in seconds.')
 tf.app.flags.DEFINE_float(
     'gpu_memory_fraction', 0.8, 'GPU memory fraction to use.')
@@ -155,7 +155,7 @@ tf.app.flags.DEFINE_integer(
     'train_image_size', None, 'Train image size')
 #tf.app.flags.DEFINE_integer('max_number_of_steps', None,
 #                            'The maximum number of training steps.')
-tf.app.flags.DEFINE_integer('max_number_of_steps', 20000,
+tf.app.flags.DEFINE_integer('max_number_of_steps', 50000,
                             'The maximum number of training steps.')
 
 # =========================================================================== #
